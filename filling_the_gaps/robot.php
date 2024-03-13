@@ -5,12 +5,12 @@ declare(strict_types=1);
 
 function getNewName(): string
 {
-    $prefix = range("A", "Z");
-    $suffix = mt_rand(100, 999);
+    $letters = range("A", "Z");
+    $number = mt_rand(100, 999);
 
-    shuffle($prefix);
+    shuffle($letters);
 
-    return "{$prefix[0]}{$prefix[1]}{$suffix}";
+    return "{$letters[0]}{$letters[1]}{$number}";
 }
 
 
